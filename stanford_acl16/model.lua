@@ -22,7 +22,8 @@ function get_model(params)
   local passage_word_vectors = nn.LookupTableMaskZero(#params.dataset.index2word, params.dim)(passage):annotate{name = 'passage_word_lookup'}
   local passage_encoder = nn.BiSequencer(nn.GRU(params.dim, params.hid_size, nil, 0), nn.GRU(params.dim, params.hid_size, nil, 0):sharedClone(), nn.JoinTable(1, 1))
   								(nn.SplitTable(1, 2)(passage_word_vectors)):annotate{name = 'passage_encoder'}
-  local final_p_out = nn.Dropout(params.dropout)(nn.View(params.bsize, -1, 2 * params.hid_size)(nn.JoinTable(2)(passage_encoder))) -- combine the forward and backward rnns' output
+  local final_p_out = nn.Dropout(params.dropout)(nn.View(params.bsize, -1, 2 * params.hid_size)
+  				(nn.JoinTable(2)(passage_encoder))) -- combine the forward and backward rnns' output
 
   -- calculate the attention
   local attention_probs = nn.SoftMax()(nn.MM(false, false)({final_p_out, 
