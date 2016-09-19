@@ -75,9 +75,9 @@ create_vocab(params.test_lines)
 print(string.format('vocab built in %.2f mins; # unique words = %d;', ((sys.clock() - start) / 60), #params.index2word))
 
 -- Generate the data tensors
-function gen_tensors(lines, label, answer)
+function gen_tensors(lines, label)
   print('generating tensors for ' .. label .. '...')
-  function get_context_windows(lines, start, cands)
+  function get_context_windows(lines, start, cands, answer)
     local windows, rel_mem_ids = {}, {}
     function tokenize(sentence, last_offset)
       local words = stringx.split(sentence)
@@ -115,6 +115,7 @@ function gen_tensors(lines, label, answer)
       end  
     end
     assert(#windows ~= 0)
+    assert(#rel_mem_ids ~= 0)
     local memory_tensor = torch.CudaTensor(#windows, params.b)
     for i = 1, #windows do
       memory_tensor[i] = windows[i]
@@ -125,12 +126,12 @@ function gen_tensors(lines, label, answer)
     local words = tokenize(line, 2)
     for i = 1, #words do
       if words[i] == 'XXXXX' then
-        local query_tensor, j = torch.CudaTensor(params.b), 0         
+        local query_tensor, j = torch.CudaTensor(1, params.b), 0         
         for k = i - params.num_pads, i + params.num_pads do
           j = j + 1
           words[k] = string.lower(words[k])	
           assert(params.word2index[words[k]] ~= nil)
-          query_tensor[j] = params.word2index[words[k]]
+          query_tensor[1][j] = params.word2index[words[k]]
         end
         return query_tensor
       end
