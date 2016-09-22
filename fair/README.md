@@ -56,6 +56,7 @@ th main.lua --help
 * cunn
 * cutorch
 * xlua
+* tds
 
 #### Author
 [Ganesh J](https://researchweb.iiit.ac.in/~ganesh.j/)
