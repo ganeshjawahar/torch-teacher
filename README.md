@@ -2,11 +2,11 @@
 
 This software repository hosts the self-contained implementation of the state-of-the-art models used in Machine Reading and Comprehension Task.
 
-| Folder/File                             | Reference                                                                                                 |
+| Folder | Reference |
 |:---------------------------------------:|:---------------------------------------------------------------------------------------------------------:|
-| `watson/`                               | **Text Understanding with the Attention Sum Reader Network**, *Kadlec et al.*.                            |
-| `stanford/`                             | **A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task**, *Chen et al.*, *ACL 2016*.   |
-| `fair/`                                 | **The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations**, *ICLR 2016*. |
+| `[watson/](https://github.com/ganeshjawahar/torch-teacher/tree/master/watson)`| **Text Understanding with the Attention Sum Reader Network**, *Kadlec et al.*.                            |
+| `[stanford/](https://github.com/ganeshjawahar/torch-teacher/tree/master/stanford)` | **A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task**, *Chen et al.*, *ACL 2016*.   |
+| `[fair/](https://github.com/ganeshjawahar/torch-teacher/tree/master/fair)`| **The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations**, *ICLR 2016*. |
 
 ### Running Time Check
 
