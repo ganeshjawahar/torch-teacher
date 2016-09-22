@@ -35,7 +35,7 @@ th main.lua --help
 
 ### Training options
 
-#### Data Preprocessing (`preprocess.lua`)
+#### `preprocess.lua`
 
 * `word_type`: class type of the prediction word. Specify `NE` for Named Entity, `CN` for Common Noun, `P` for Preposition and `V` for Verb
 * `data`: path to the data folder containing train, validation and test records
@@ -43,7 +43,7 @@ th main.lua --help
 * `question_pad`: which side to pad the question to make sequences in a batch to be of same size? `left` or `right`?
 * `passage_pad`: which side to pad the passage to make sequences in a batch to be of same size? `left` or `right`?
 
-#### Training Options (`main.lua`)
+#### `main.lua`
 
 * `input`: input file name for the saved tensors
 * `seed`: seed value for the random generator

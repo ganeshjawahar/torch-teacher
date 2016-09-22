@@ -35,14 +35,14 @@ th main.lua --help
 
 ### Training options
 
-#### Data Preprocessing (`preprocess.lua`)
+#### `preprocess.lua`
 
 * `word_type`: class type of the prediction word. Specify `NE` for Named Entity, `CN` for Common Noun, `P` for Preposition and `V` for Verb
 * `data`: path to the data folder containing train, validation and test records
 * `b`: size of the window memory (same symbol used in the paper)
 * `out`: output file name for the tensors to be saved
 
-#### Training Options (`main.lua`)
+#### `main.lua`
 
 * `input`: input file name for the saved tensors
 * `seed`: seed value for the random generator

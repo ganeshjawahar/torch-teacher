@@ -8,7 +8,7 @@ This software repository hosts the self-contained implementation of the state-of
 | [stanford/](https://github.com/ganeshjawahar/torch-teacher/tree/master/stanford) | **A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task**, *Chen et al.*, *ACL 2016*. |
 | [fair/](https://github.com/ganeshjawahar/torch-teacher/tree/master/fair) | **The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations**, *Hill et al.*, *ICLR 2016*. |
 
-### Training Time Check
+### Benchmarking Training Time
 
 | mins per batch (mins per epoch) | [watson/](https://github.com/ganeshjawahar/torch-teacher/tree/master/watson) | [stanford/](https://github.com/ganeshjawahar/torch-teacher/tree/master/stanford) | [fair/](https://github.com/ganeshjawahar/torch-teacher/tree/master/fair) |
 |---|:---:|:---:|:---:|
@@ -20,6 +20,7 @@ This software repository hosts the self-contained implementation of the state-of
 ### Acknowledgements
 This repository would not be possible without the efforts of the maintainers of the following libraries:
 * [Element-Research/rnn](https://github.com/Element-Research/rnn)
+* [MemNN](https://github.com/facebook/MemNN)
 * [Torch](https://github.com/torch) (Ofcourse!)
 
 #### Author
