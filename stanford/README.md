@@ -18,7 +18,7 @@ To generate and save the data tensors (objects readable for Torch),
 th preprocess.lua -data cnn/questions/
 ```
 
-where the data value `cnn/questions/` points to the extracted directory containing the training, validation and testing files for NE prediction task
+where the data value `cnn/questions/` points to the extracted directory containing the training, validation and testing files for NE prediction task.
 
 To kick-start the training,
 
@@ -37,7 +37,6 @@ th main.lua --help
 
 #### Data Preprocessing (`preprocess.lua`)
 
-* `word_type`: class type of the prediction word. Specify `NE` for Named Entity, `CN` for Common Noun, `P` for Preposition and `V` for Verb
 * `data`: path to the data folder containing train, validation and test records
 * `out`: output file name for the tensors to be saved
 * `batch_size`: sgd mini-batch size
@@ -49,7 +48,7 @@ th main.lua --help
 
 * `input`: input file name for the saved tensors
 * `seed`: seed value for the random generator
-* `glove_file`: file containing the pre-trained glove word embeddings
+* `glove_file`: file containing the pre-trained glove word embeddings (downloadable from the [Glove](http://nlp.stanford.edu/projects/glove/)'s official page)
 * `dim`: dimensionality of word embeddings
 * `hid_size`: RNN's hidden layer size
 * `num_epochs`: number of full passes through the training data
