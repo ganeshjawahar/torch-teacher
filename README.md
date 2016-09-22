@@ -11,7 +11,7 @@ This software repository hosts the self-contained implementation of the state-of
 ### Training Time Check
 
 | * | [watson/](https://github.com/ganeshjawahar/torch-teacher/tree/master/watson) | [stanford/](https://github.com/ganeshjawahar/torch-teacher/tree/master/stanford) | [fair/](https://github.com/ganeshjawahar/torch-teacher/tree/master/fair) |
-|---|---|---|---|
+|---|:---:|:---:|:---:|
 |GPU\Batch Size|32|32|1|
 |K40|`806 ms` (`46m 16s`)|`800 ms` (`2h 40m`)|`18ms` (`34m 8s`)|
 |Titan X|`746 ms` (`42m 38s`)|-|`13ms` (`24m 45s`)|
