@@ -56,7 +56,7 @@ th main.lua --help
 * `grad_clip`: clip gradients at this value
 * `dropout`: dropout for regularization, used before the prediction layer. 0 = no dropout
 
-#### Torch Dependencies
+### Torch Dependencies
 * nn
 * cunn
 * cutorch

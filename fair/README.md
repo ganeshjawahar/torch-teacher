@@ -51,7 +51,7 @@ th main.lua --help
 * `lr`: learning rate (note: currently waiting for the first author to reply the optimal learning rate decay used in the experiments.)
 * `window_compo`: how to compose the window representations from the word vectors? sum or concatenation?
 
-#### Torch Dependencies
+### Torch Dependencies
 * nn
 * cunn
 * cutorch

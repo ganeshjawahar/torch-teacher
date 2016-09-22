@@ -54,7 +54,7 @@ th main.lua --help
 * `bsize`: mini-batch size for adam
 * `grad_clip`: clip gradients at this value
 
-#### Torch Dependencies
+### Torch Dependencies
 * nn
 * cunn
 * cutorch
