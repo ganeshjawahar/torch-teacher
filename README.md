@@ -13,9 +13,9 @@ This software repository hosts the self-contained implementation of the state-of
 | * | [watson/](https://github.com/ganeshjawahar/torch-teacher/tree/master/watson) | [stanford/](https://github.com/ganeshjawahar/torch-teacher/tree/master/stanford) | [fair/](https://github.com/ganeshjawahar/torch-teacher/tree/master/fair) |
 |---|:---:|:---:|:---:|
 |GPU\Batch Size|32|32|1|
-|K40|`806 ms` (`46m 16s`)|`800 ms` (`2h 40m`)|`18ms` (`34m 8s`)|
-|Titan X|`746 ms` (`42m 38s`)|-|`13ms` (`24m 45s`)|
-|1080|`889 ms` (`51m 8s`)|-|`13ms` (`25m 29s`)|
+|[K40](http://www.nvidia.com/object/tesla-servers.html)|`806 ms` (`46m 16s`)|`800 ms` (`2h 40m`)|`18ms` (`34m 8s`)|
+|[Titan X](http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-titan-x/specifications)|`746 ms` (`42m 38s`)|-|`13ms` (`24m 45s`)|
+|[1080](http://www.geforce.com/hardware/10series/geforce-gtx-1080) |`889 ms` (`51m 8s`)|-|`13ms` (`25m 29s`)|
 
 ### Acknowledgements
 This repository would not be possible without the efforts of the maintainers of the following libraries:
