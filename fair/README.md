@@ -58,8 +58,8 @@ th main.lua --help
 * xlua
 * tds
 
-#### Author
+### Author
 [Ganesh J](https://researchweb.iiit.ac.in/~ganesh.j/)
 
-#### Licence
+### Licence
 MIT

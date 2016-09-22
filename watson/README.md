@@ -64,9 +64,9 @@ th main.lua --help
 * tds
 * nngraph
 
-#### Author
+### Author
 [Ganesh J](https://researchweb.iiit.ac.in/~ganesh.j/)
 
-#### Licence
+### Licence
 MIT
 

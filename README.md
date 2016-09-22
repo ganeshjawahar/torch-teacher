@@ -23,8 +23,8 @@ This repository would not be possible without the efforts of the maintainers of 
 * [MemNN](https://github.com/facebook/MemNN)
 * [Torch](https://github.com/torch) (Ofcourse!)
 
-#### Author
+### Author
 [Ganesh J](https://researchweb.iiit.ac.in/~ganesh.j/)
 
-#### Licence
+### Licence
 MIT
