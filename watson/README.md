@@ -1,11 +1,11 @@
-## The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations (ICLR 2016)
+## Text Understanding with the Attention Sum Reader Network
 
-[Torch](http://torch.ch) implementation of the model 'MemNNs (Window Memory + Self-Supervision)' proposed in [Hill et al.](http://arxiv.org/abs/1511.02301)'s work.
+[Torch](http://torch.ch) implementation of the model 'AS Reader (Single Model)' proposed in [Kadlec et al.](https://arxiv.org/abs/1603.01547)'s work.
 
 ### Features
 
 * Train the model with the benchmarked corpus, [Children's Book Test](https://research.facebook.com/research/babi/) (CBT) out of the box.
-* Support for the selection of window composition, viz., Summation or Concatentation of the word vectors within the window
+* Easy to try out all the variants of activations functions of RNNs such as vanilla RNN, GRU and LSTM.
 * Support for tuning other hyper-parameters of the model reported in the paper.
 
 ### Quick Start
@@ -39,17 +39,20 @@ th main.lua --help
 
 * `word_type`: class type of the prediction word. Specify `NE` for Named Entity, `CN` for Common Noun, `P` for Preposition and `V` for Verb
 * `data`: path to the data folder containing train, validation and test records
-* `b`: size of the window memory (same symbol used in the paper)
 * `out`: output file name for the tensors to be saved
+* `question_pad`: which side to pad the question to make sequences in a batch to be of same size? `left` or `right`?
+* `passage_pad`: which side to pad the passage to make sequences in a batch to be of same size? `left` or `right`?
 
 #### Training Options (`main.lua`)
 
 * `input`: input file name for the saved tensors
 * `seed`: seed value for the random generator
-* `p`: dimensionality of word embeddings (same symbol used in the paper)
+* `dim`: dimensionality of word embeddings
+* `hid_size`: RNN's hidden layer size
 * `num_epochs`: number of full passes through the training data
-* `lr`: learning rate (note: currently waiting for the first author to reply the optimal learning rate decay used in the experiments.)
-* `window_compo`: how to compose the window representations from the word vectors? sum or concatenation?
+* `lr`: adam's learning rate
+* `bsize`: mini-batch size for adam
+* `grad_clip`: clip gradients at this value
 
 #### Torch Dependencies
 * nn
@@ -62,3 +65,4 @@ th main.lua --help
 
 #### Licence
 MIT
+
