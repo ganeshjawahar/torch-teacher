@@ -4,7 +4,7 @@ This software repository hosts the self-contained implementation of the state-of
 
 | Folder | Reference |
 |---|---|
-| [watson/](https://github.com/ganeshjawahar/torch-teacher/tree/master/watson)| **Text Understanding with the Attention Sum Reader Network**, *Kadlec et al.*. |
+| [watson/](https://github.com/ganeshjawahar/torch-teacher/tree/master/watson)| **Text Understanding with the Attention Sum Reader Network**, *Kadlec et al.*, *ACL 2016*. |
 | [stanford/](https://github.com/ganeshjawahar/torch-teacher/tree/master/stanford) | **A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task**, *Chen et al.*, *ACL 2016*. |
 | [fair/](https://github.com/ganeshjawahar/torch-teacher/tree/master/fair) | **The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations**, *Hill et al.*, *ICLR 2016*. |
 
